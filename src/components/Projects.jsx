@@ -7,14 +7,14 @@ const Projects = () => {
       title: 'Smart Home IoT Control',
       description: 'Developed an intelligent central control system for IoT devices with real-time sensor monitoring and automated routines.',
       stack: ['Python', 'React', 'MQTT', 'Node.js'],
-      link: '#',
+      link: 'https://github.com/ashiks27-boop/smart-home-system',
       icon: '✦'
     },
     {
       title: 'Recycling E-Commerce',
       description: 'A sustainable marketplace platform connecting recycling centers with bulk buyers, featuring live inventory tracking.',
       stack: ['React', 'MongoDB', 'Express', 'Node.js'],
-      link: '#',
+      link: 'https://github.com/ashiks27-boop/Recycling-E-commerce-Platform',
       icon: '✦'
     },
    
