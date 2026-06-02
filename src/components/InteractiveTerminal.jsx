@@ -6,14 +6,14 @@ const InteractiveTerminal = () => {
       type: 'system',
       content: (
         <>
-          <p><span className="text-slate-400">const</span> <span className="text-gold-400">developer</span> = {'{'}</p>
-          <p className="pl-6"><span className="text-gold-200">name:</span> <span className="text-gold-300">'Ashik Santhosh P'</span>,</p>
-          <p className="pl-6"><span className="text-gold-200">role:</span> <span className="text-gold-300">'Full Stack Developer'</span>,</p>
-          <p className="pl-6"><span className="text-gold-200">passion:</span> <span className="text-gold-300">'Data Science'</span>,</p>
-          <p className="pl-6"><span className="text-gold-200">status:</span> <span className="text-gold-300">'Building the future'</span></p>
-          <p>{'};'}</p>
-          <br />
-          <p><span className="text-slate-400">developer</span>.<span className="text-gold-400">execute</span>();</p>
+          <p className="mb-4"><span className="text-gold-400">visitor@portfolio:~$</span> whois ashik</p>
+          <div className="text-slate-300">
+            <p><span className="text-gold-200">Name</span>{"       : Ashik Santhosh P"}</p>
+            <p><span className="text-gold-200">Education</span>{"  : MCA Candidate"}</p>
+            <p><span className="text-gold-200">Focus</span>{"      : Web Development"}</p>
+            <p><span className="text-gold-200">Goal</span>{"       : Building innovative digital solutions"}</p>
+            <p><span className="text-gold-200">Status</span>{"     : Available for Hire"}</p>
+          </div>
           <p className="mt-4 text-slate-500">Type <span className="text-gold-400 font-bold">'help'</span> to see available commands.</p>
         </>
       )
