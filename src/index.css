@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --color-gold-100: #FDF7D2;
+  --color-gold-200: #FBEBA4;
+  --color-gold-300: #F6D672;
+  --color-gold-400: #E6B54A;
+  --color-gold-500: #C28B22;
+  --color-gold-600: #946210;
+  --color-gold-700: #6B4307;
+}
+
+@keyframes text-gradient {
+  0% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+}
+
+.animate-text-gradient {
+  animation: text-gradient 4s ease infinite;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-sans);
 }

@@ -4,71 +4,68 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projects = [
     {
-      title: "Smart Home IoT Control System",
-      description: "An integrated hardware-software solution for home automation. Engineered with real-time sensor monitoring and automation controls to enhance energy efficiency and security.",
-      tech: ["IoT", "MERN Stack", "Machine Learning", "MongoDB"],
-      featured: true,
+      title: 'Smart Home IoT Control',
+      description: 'Developed an intelligent central control system for IoT devices with real-time sensor monitoring and automated routines.',
+      stack: ['Python', 'React', 'MQTT', 'Node.js'],
+      link: '#',
+      icon: '✦'
     },
-      {
-      title: "Recycling E-Commerce Platform",
-      description:
-        "Developed a recycling-based e-commerce platform that enables users to buy, sell, and manage recyclable products with an efficient online system.",
-      tech: ["Django", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
+    {
+      title: 'Recycling E-Commerce',
+      description: 'A sustainable marketplace platform connecting recycling centers with bulk buyers, featuring live inventory tracking.',
+      stack: ['React', 'MongoDB', 'Express', 'Node.js'],
+      link: '#',
+      icon: '✦'
     },
+   
   ];
 
   return (
-    <section id="projects" className="px-6 md:px-20 py-24 relative z-10">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="flex items-center gap-4 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-100">Featured Projects</h2>
-            <div className="h-px bg-slate-800 flex-1 mt-2"></div>
-          </div>
+    <section id="projects" className="py-24 bg-transparent relative border-t border-zinc-900">
+      <div className="max-w-7xl mx-auto px-6 md:px-20 relative z-10">
+        
+        <div className="mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured Work</h2>
+          <div className="w-20 h-1.5 bg-gradient-to-r from-gold-500 to-gold-300 rounded-full"></div>
+        </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="group relative bg-[#101018] border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 flex flex-col h-full"
-              >
-                {/* Simulated Image Header */}
-                <div className="h-40 bg-slate-800/50 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 group-hover:scale-105 transition-transform duration-700"></div>
-                  <svg className="w-10 h-10 text-slate-600 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                
-                <div className="p-8 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold mb-3 text-slate-100 group-hover:text-indigo-400 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-8 font-light flex-1">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tech.map((tech, i) => (
-                      <span key={i} className="text-xs font-mono text-indigo-300 bg-indigo-500/10 px-2 py-1 rounded">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="bg-[#09090b] border border-zinc-800 rounded-3xl p-8 flex flex-col h-full hover:-translate-y-2 hover:border-gold-500/40 transition-all duration-500 group relative overflow-hidden shadow-2xl"
+            >
+              {/* Subtle Gold Hover Glow */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gold-500/0 group-hover:bg-gold-500/5 blur-3xl transition-colors duration-700 pointer-events-none"></div>
+
+              <div className="w-12 h-12 bg-zinc-900 rounded-full flex items-center justify-center text-gold-400 mb-8 border border-zinc-800 group-hover:border-gold-500/30 transition-colors">
+                {project.icon}
+              </div>
+              
+              <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">{project.title}</h3>
+              <p className="text-slate-400 leading-relaxed font-light mb-8 flex-grow">
+                {project.description}
+              </p>
+              
+              <div className="flex flex-wrap gap-2 mb-8">
+                {project.stack.map((tech, tIdx) => (
+                  <span key={tIdx} className="px-3 py-1 bg-transparent border border-zinc-800 rounded-full text-xs font-semibold text-slate-300 group-hover:border-gold-500/20 transition-colors">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a href={project.link} className="inline-flex items-center text-gold-400 font-semibold text-sm uppercase tracking-widest group-hover:text-gold-300 transition-colors">
+                View Project 
+                <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">→</span>
+              </a>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
