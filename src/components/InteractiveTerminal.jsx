@@ -11,7 +11,6 @@ const InteractiveTerminal = () => {
             <p><span className="text-gold-200">Name</span>{"       : Ashik Santhosh P"}</p>
             <p><span className="text-gold-200">Education</span>{"  : MCA Candidate"}</p>
             <p><span className="text-gold-200">Focus</span>{"      : Web Development"}</p>
-            <p><span className="text-gold-200">Goal</span>{"       : Building innovative digital solutions"}</p>
             <p><span className="text-gold-200">Status</span>{"     : Available for Hire"}</p>
           </div>
           <p className="mt-4 text-slate-500">Type <span className="text-gold-400 font-bold">'help'</span> to see available commands.</p>
