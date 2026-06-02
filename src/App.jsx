@@ -13,8 +13,8 @@ function App() {
     <div className="min-h-screen bg-[#000000] text-slate-200 font-sans selection:bg-gold-500/30">
       <Background />
       
-      <div className="fixed top-6 w-full flex justify-center z-50 px-4 pointer-events-none">
-        <nav className="flex items-center justify-between md:justify-center bg-[#09090b]/80 backdrop-blur-xl border border-gold-500/20 px-5 py-3 md:px-8 md:py-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] w-full max-w-3xl pointer-events-auto">
+      <div className="fixed top-2 md:top-6 w-full flex justify-center z-50 px-4 md:px-4 pointer-events-none">
+        <nav className="flex items-center justify-between md:justify-center md:bg-[#09090b]/80 md:backdrop-blur-xl md:border md:border-gold-500/20 py-4 md:px-8 md:py-4 md:rounded-full md:shadow-[0_10px_30px_rgba(0,0,0,0.5)] w-full max-w-3xl pointer-events-auto">
           {/* Mobile Logo */}
           <div className="md:hidden text-lg font-bold tracking-tighter text-white">
             Ashik<span className="text-gold-500">.</span>
