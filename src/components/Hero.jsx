@@ -66,7 +66,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4 items-center">
             
             
-            <a href="/resume.pdf" download="Ashik_Santhosh_Resume.pdf" className="px-10 py-4 bg-[#09090b]/50 backdrop-blur-md text-gold-400 font-bold uppercase tracking-wider hover:bg-gold-500/10 hover:scale-[1.02] transition-all rounded-sm text-sm border border-gold-500/30 hover:border-gold-400 flex items-center gap-2">
+            <a href="./resume.pdf" download="Ashik_Santhosh_Resume.pdf" className="px-10 py-4 bg-[#09090b]/50 backdrop-blur-md text-gold-400 font-bold uppercase tracking-wider hover:bg-gold-500/10 hover:scale-[1.02] transition-all rounded-sm text-sm border border-gold-500/30 hover:border-gold-400 flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
