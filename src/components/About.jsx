@@ -27,7 +27,7 @@ const About = () => {
             {/* Image container */}
             <div className="w-full h-full rounded-2xl overflow-hidden relative bg-[#09090b] flex items-center justify-center">
               <img 
-                src="/profile.jpg" 
+                src="./profile.jpg" 
                 alt="Ashik Santhosh" 
                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 z-0"
                 onError={(e) => {
