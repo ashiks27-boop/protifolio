@@ -47,7 +47,7 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-start text-left"
+          className="flex flex-col items-start text-left order-2 md:order-1"
         >
           {/* Main Headline */}
           <motion.h1 variants={itemVariants} className="text-5xl md:text-[5rem] font-extrabold mb-6 tracking-tight text-white leading-[1.1]">
@@ -80,7 +80,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="flex flex-col items-center justify-center relative w-full mt-12 md:mt-0"
+          className="flex flex-col items-center justify-center relative w-full mb-16 md:mb-0 mt-4 md:mt-0 order-1 md:order-2"
         >
           {/* Terminal Hint for HR/Visitors */}
           <motion.div 

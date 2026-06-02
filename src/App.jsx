@@ -14,7 +14,13 @@ function App() {
       <Background />
       
       <div className="fixed top-6 w-full flex justify-center z-50 px-4 pointer-events-none">
-        <nav className="flex items-center justify-center bg-[#09090b]/60 backdrop-blur-xl border border-gold-500/20 px-8 py-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] w-full max-w-3xl pointer-events-auto">
+        <nav className="flex items-center justify-between md:justify-center bg-[#09090b]/80 backdrop-blur-xl border border-gold-500/20 px-5 py-3 md:px-8 md:py-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] w-full max-w-3xl pointer-events-auto">
+          {/* Mobile Logo */}
+          <div className="md:hidden text-lg font-bold tracking-tighter text-white">
+            Ashik<span className="text-gold-500">.</span>
+          </div>
+
+          {/* Desktop Links */}
           <ul className="hidden md:flex gap-10 text-sm font-medium tracking-wide">
             <li><a href="#about" className="text-slate-300 hover:text-gold-400 transition-colors">About</a></li>
             <li><a href="#skills" className="text-slate-300 hover:text-gold-400 transition-colors">Skills</a></li>
@@ -23,7 +29,7 @@ function App() {
             <li><a href="#contact" className="text-slate-300 hover:text-gold-400 transition-colors">Contact</a></li>
           </ul>
           
-          <a href="#contact" className="md:hidden px-4 py-2 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/20 text-xs font-bold uppercase tracking-widest">
+          <a href="#contact" className="md:hidden px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/20 text-xs font-bold uppercase tracking-widest">
             Contact
           </a>
         </nav>
