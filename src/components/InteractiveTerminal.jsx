@@ -50,7 +50,7 @@ const InteractiveTerminal = () => {
           output = "Languages : Java, Python, JavaScript\nDBs       : MongoDB, MySQL, SQLite\nFrameworks: React, Node.js, Django\nSpecialties: Machine Learning, IoT";
           break;
         case 'projects':
-          output = "1. Smart Home IoT Control System\n2. Recycling E-Commerce Platform\n3. Resume Ranking System";
+          output = "1. Smart Home IoT Control System\n2. Recycling E-Commerce Platform\n3. CodeCompass";
           break;
         case 'education':
           output = "MCA   - KMM College of Arts & Science (MG University)\nB.Com - SNM College Maliyankara (MG University)";
