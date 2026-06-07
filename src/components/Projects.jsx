@@ -18,9 +18,9 @@ const Projects = () => {
       icon: '✦'
     },
     {
-      title: 'ProjectPilot',
-      description: 'A comprehensive project management and collaboration platform designed to streamline workflows and boost team productivity.',
-      stack: ['React', 'Node.js', 'Express', 'MongoDB'],
+      title: 'Project Pilot AI',
+      description: 'A full-stack, AI-powered project mentor that generates architectural blueprints and provides context-aware coding guidance throughout the development lifecycle.',
+      stack: ['React', 'Flask', 'Gemini AI', 'Tailwind'],
       link: '#',
       icon: '✦'
     }
