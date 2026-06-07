@@ -17,7 +17,14 @@ const Projects = () => {
       link: 'https://github.com/ashiks27-boop/Recycling-E-commerce-Platform',
       icon: '✦'
     },
-   
+    },
+    {
+      title: 'ProjectPilot',
+      description: 'A comprehensive project management and collaboration platform designed to streamline workflows and boost team productivity.',
+      stack: ['React', 'Node.js', 'Express', 'MongoDB'],
+      link: '#',
+      icon: '✦'
+    }
   ];
 
   return (
