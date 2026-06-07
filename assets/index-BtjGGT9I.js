@@ -19,7 +19,7 @@ DBs       : MongoDB, MySQL, SQLite
 Frameworks: React, Node.js, Django
 Specialties: Machine Learning, IoT`;break;case`projects`:a=`1. Smart Home IoT Control System
 2. Recycling E-Commerce Platform
-3. Resume Ranking System`;break;case`education`:a=`MCA   - KMM College of Arts & Science (MG University)
+3. CodeCompass`;break;case`education`:a=`MCA   - KMM College of Arts & Science (MG University)
 B.Com - SNM College Maliyankara (MG University)`;break;case`linkedin`:a=`Opening LinkedIn...`,window.open(`https://www.linkedin.com/in/ashik-santhosh-`,`_blank`);break;case`github`:a=`Opening GitHub...`,window.open(`https://github.com/ashiks27-boop`,`_blank`);break;case`email`:a=`Opening Email...`,window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=ashiksanthosh2706@gmail.com`,`_blank`);break;case`clear`:t([]),r(``);return;default:a=`Command not found: ${i}. Type 'help' for a list of commands.`}t([...o,{type:`output`,content:a}]),r(``)}},className:`flex-1 bg-transparent outline-none text-slate-100 caret-slate-100 min-w-0`,autoComplete:`off`,spellCheck:`false`,autoFocus:!0})]})]}),(0,W.jsx)(`style`,{dangerouslySetInnerHTML:{__html:`
         .custom-scrollbar::-webkit-scrollbar {
           width: 8px;
