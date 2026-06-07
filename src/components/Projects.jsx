@@ -18,7 +18,7 @@ const Projects = () => {
       icon: '✦'
     },
     {
-      title: 'Project Pilot AI',
+      title: 'CodeCompass',
       description: 'A full-stack, AI-powered project mentor that generates architectural blueprints and provides context-aware coding guidance throughout the development lifecycle.',
       stack: ['React', 'Flask', 'Gemini AI', 'Tailwind'],
       link: '#',
